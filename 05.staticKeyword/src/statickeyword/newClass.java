@@ -1,6 +1,8 @@
 package statickeyword;
 
 public class newClass {
+    int age;
+    String name;
 
     public static void display()
     {
