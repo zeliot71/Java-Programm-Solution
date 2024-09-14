@@ -100,7 +100,7 @@ public class UIU {
 
         for (int i = 0; i < departments.length; i++) {
             departments[i].displayCourses();
-            System.out.println();
+            System.out.println("Submitted");
         }
     }
 }
