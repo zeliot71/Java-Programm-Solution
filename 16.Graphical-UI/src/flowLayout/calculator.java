@@ -108,7 +108,7 @@ double num1,num2,result;
 
             }
             else if(e.getSource() == equal){
-                resultFeild.setText(String.valueOf(result));
+                resultFeild.setText(result+"");
             }
         }
         catch (NumberFormatException ex){
