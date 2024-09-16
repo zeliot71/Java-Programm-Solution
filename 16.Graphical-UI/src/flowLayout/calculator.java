@@ -90,24 +90,26 @@ double num1,num2,result;
             num2 = Double.parseDouble(input2.getText());
 
             if(e.getSource() == plus){
-                result += num1 + num2;
+                result = num1 + num2;
             }
             else if(e.getSource() == minus){
-                result -= num1 - num2;
+                result = num1 - num2;
             }
             else if(e.getSource() == multiply){
-                result *= num1 * num2;
+                result = num1 * num2;
             }
             else if(e.getSource() == divide){
                 if(num2 != 0){
-                    result /= num1 / num2;
+                    result = num1 / num2;
                 }
                 else{
                     resultFeild.setText("Error: Division by 0");
                 }
 
             }
-       resultFeild.setText(String.valueOf(result));
+            else if(e.getSource() == equal){
+                resultFeild.setText(String.valueOf(result));
+            }
         }
         catch (NumberFormatException ex){
             resultFeild.setText("Error: Invalid Ipput");
