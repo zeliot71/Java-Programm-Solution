@@ -1,3 +1,5 @@
+package Problem1;
+
 public class Queue {
     public double[] queueElements;
     private int queueCapacity;
@@ -5,11 +7,12 @@ public class Queue {
 
     public Queue(int capacity) {
         queueCapacity = capacity;
-             this.queueElements = new double[capacity];
-                System.out.println("Creating a Queue : Capacity " + queueCapacity);
+        this.queueElements = new double[capacity];
+        System.out.println("Creating a Problem1.Queue : Capacity " + queueCapacity);
     }
 
     public void setLastIndex( int lastIndex){
+
         this.lastIndex = lastIndex;
     }
     public int getLastIndex(){
@@ -31,7 +34,7 @@ public class Queue {
 
     void dequeue() {
         if(getLastIndex() == -1){
-            System.out.println("Queue is Empty");
+            System.out.println("Problem1.Queue is Empty");
         }else{
             System.out.println("Dequeuing: Successful");
 
@@ -44,7 +47,7 @@ public class Queue {
     }
 
     void printElements(){
-        System.out.println("Showing Elements of the Queue : ");
+        System.out.println("Showing Elements of the queue : ");
         for(double i : queueElements){
             System.out.print(i+" ");
         }
@@ -57,11 +60,13 @@ class QueueTest{
     public static void main(String[] args) {
         Queue q = new Queue(5);
         q.enqueue(5.2);
+
         q.enqueue(2.1);
         q.enqueue(-2.0);
         q.enqueue(7.88);
         q.enqueue(5.5);
         q.enqueue(1.1);
+
        q.printElements();
        q.dequeue();
         q.printElements();
