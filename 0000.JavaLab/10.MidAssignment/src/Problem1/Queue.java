@@ -43,13 +43,17 @@ public class Queue {
             }
             queueElements[lastIndex] = 0;
             lastIndex --;
+            queueCapacity--;
        }
     }
 
     void printElements(){
         System.out.println("Showing Elements of the queue : ");
-        for(double i : queueElements){
+        /*for(double i : queueElements){
             System.out.print(i+" ");
+        }*/
+        for(int i = 0; i < queueCapacity; i++){
+            System.out.print(queueElements[i] + " ");
         }
         System.out.println();
     }

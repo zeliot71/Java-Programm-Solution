@@ -30,7 +30,6 @@ public class Main {
             patients[i] = new Patient(id,name,history);
 
             patients[i].setMedicines(medicines);
-
         }
         System.out.println("Medicines for all patients: ");
         for (int i = 0; i < n; i++) {
